@@ -7,7 +7,7 @@ import filter from './assets/filter.svg'
 import caneta from './assets/Caneta.svg'
 import perfil from './assets/perfil.png'
 import Vector from './assets/Vector.svg'
-import Search from './assets/Search.svg'
+import Search from './assets/search.svg'
 import './App.css'
 
 function App() {
