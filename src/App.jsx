@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import tablet from '../src/assets/nav/tablet-portrait.svg'
+const tablet = require('./assets/nav/tablet-portrait.svg')
 import people from '.././src/assets/nav/people.svg'
 import cog from '.././src/assets/nav/cog.svg'
 import document from '.././src/assets/nav/document-text.svg'
