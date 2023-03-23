@@ -43,7 +43,7 @@ function App() {
             <li><button><img src={cog} alt="" />Ajustes</button></li>
           </ul>
         </div>
-        <small>Desenvolvido por Felipe</small>
+        <small>Desenvolvido por Paulo Felipe</small>
       </div>
       <div className="main-container">
         <div className="main">
