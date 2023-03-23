@@ -1,8 +1,8 @@
 import { useState } from 'react'
-import tablet from './assets/nav/tablet-portrait.svg'
-import people from './assets/nav/people.svg'
-import cog from './assets/nav/cog.svg'
-import document from './assets/nav/document-text.svg'
+import tablet from '../src/assets/Nav/tablet-portrait.svg'
+import people from './assets/Nav/people.svg'
+import cog from './assets/Nav/cog.svg'
+import document from './assets/Nav/document-text.svg'
 import filter from './assets/filter.svg'
 import caneta from './assets/Caneta.svg'
 import perfil from './assets/perfil.png'
@@ -11,8 +11,6 @@ import Search from './assets/Search.svg'
 import './App.css'
 
 function App() {
-
-
   return (
     <div className="App">
       <div className="menu">
