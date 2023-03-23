@@ -1,13 +1,13 @@
 import { useState } from 'react'
-const tablet = require('./assets/nav/tablet-portrait.svg')
-const people = require('./assets/nav/people.svg')
-const cog = require('./assets/nav/cog.svg')
-const document = require('./assets/nav/document-text.svg')
-const filter = require('./assets/filter.svg')
-const caneta = require('./assets/Caneta.svg')
-const perfil = require('./assets/perfil.png')
-const Vector = require('./assets/Vector.svg')
-const Search = require('./assets/Search.svg')
+import tablet from './assets/nav/tablet-portrait.svg'
+import people from './assets/nav/people.svg'
+import cog from './assets/nav/cog.svg'
+import document from './assets/nav/document-text.svg'
+import filter from './assets/filter.svg'
+import caneta from './assets/Caneta.svg'
+import perfil from './assets/perfil.png'
+import Vector from './assets/Vector.svg'
+import Search from './assets/Search.svg'
 import './App.css'
 
 function App() {
