@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 import tablet from '../src/assets/Nav/tablet-portrait.svg'
 import people from './assets/Nav/people.svg'
 import cog from './assets/Nav/cog.svg'
@@ -9,7 +9,7 @@ import perfil from './assets/perfil.png'
 import Vector from './assets/Vector.svg'
 import Search from './assets/search.svg'
 import './App.css'
-import Card from './components/card'
+ 
 
 function App() {
 
