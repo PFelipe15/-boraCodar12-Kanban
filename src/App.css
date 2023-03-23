@@ -31,12 +31,15 @@ a {
 .menu {
   width: 175px;
   height: 100%;
-
-  padding-left: 35px;
+  margin-right: 27px;
+  margin-left: 35px;
 }
+
+ 
 
 .menu #logoId {
   margin-top: 32px;
+
 }
 
 .menu .menu-nav {
@@ -98,6 +101,10 @@ a {
 
 }
 
+.main-header img {
+  border-radius: 50%;
+}
+
 .main-header .title-kaban {
   display: flex;
   align-items: center;
@@ -143,6 +150,7 @@ a {
   box-shadow: #7C3AED 0px 5px 12px;
   transform: scale(1.005);
 }
+
 .main-filter .container-search {
   position: relative;
   width: 1000px;
@@ -164,7 +172,7 @@ a {
 
 .main-filter .container-search input:hover {
   box-shadow: #7C3AED 0px 5px 12px;
-  
+
 }
 
 .main-filter .container-search img {
@@ -172,4 +180,77 @@ a {
   left: 12px;
   top: 12px;
 
+}
+
+.main-kanbans {
+  width: 100%;
+  margin-top: 32px;
+  padding-left: 24px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+
+}
+
+.container-card h1 {
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--text-primarycolor);
+}
+
+.card {
+  display: flex;
+  width: 380px;
+  height: 153px;
+  flex-direction: column;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 16px #EAE2FD;
+  border-radius: 8px;
+  justify-content: space-around;
+  padding: 54px 24px;
+  gap: 10px;
+
+}
+
+.card h3 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--text-primarycolor);
+
+}
+
+.card p {
+
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+
+
+}
+
+.card .tags {
+  display: flex;
+  gap: 8px;
+}
+
+.card .tags small {
+  display: flex;
+  padding: 6px 8px;
+  justify-content: center;
+  background: #E2D6FF;
+  border-radius: 8px;
+  align-items: center;
+  color: #7C3AED;
+  font-size: 11px;
+  font-weight: bold;
 }

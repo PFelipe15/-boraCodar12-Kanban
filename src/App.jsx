@@ -1,16 +1,34 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import tablet from '../src/assets/Nav/tablet-portrait.svg'
 import people from './assets/Nav/people.svg'
 import cog from './assets/Nav/cog.svg'
-import document from './assets/Nav/document-text.svg'
+import Document from './assets/Nav/document-text.svg'
 import filter from './assets/filter.svg'
 import caneta from './assets/Caneta.svg'
 import perfil from './assets/perfil.png'
 import Vector from './assets/Vector.svg'
 import Search from './assets/search.svg'
 import './App.css'
+import Card from './components/card'
 
 function App() {
+
+  useEffect(() => {
+    let handleLimit = () => {
+      let p = document.querySelectorAll('.card p')
+      const limit = 80
+      console.log(p)
+      for (let ps of p) {
+        const aboveLimit = ps.innerHTML.length > limit
+        const donstOrEmpty = aboveLimit ? '...' : ''
+        ps.innerHTML = ps.innerHTML.substring(0, limit) + donstOrEmpty
+      }
+    }
+
+    handleLimit()
+  })
+
+
   return (
     <div className="App">
       <div className="menu">
@@ -21,11 +39,11 @@ function App() {
           <ul>
             <li><button><img src={tablet} alt="" />Boards</button>  </li>
             <li><button><img src={people} alt="" />Equipes</button></li>
-            <li><button><img src={document} alt="" />Relatórios</button></li>
+            <li><button><img src={Document} alt="" />Relatórios</button></li>
             <li><button><img src={cog} alt="" />Ajustes</button></li>
           </ul>
         </div>
-
+        <small>Desenvolvido por Felipe</small>
       </div>
       <div className="main-container">
         <div className="main">
@@ -47,11 +65,90 @@ function App() {
 
             </div>
           </div>
+
+          <div className="main-kanbans">
+            <div className='container-card'>
+              <h1>A fazer</h1>
+              <div className="card">
+                <h3>#boraCodar</h3>
+                <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.</p>
+                <div className="tags">
+                  <small>rocketseat</small>
+                  <small>desafio</small>
+                </div>
+
+              </div>
+              <div className="card">
+                <h3>#boraCodar</h3>
+                <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.</p>
+                <div className="tags">
+                  <small>rocketseat</small>
+                  <small>desafio</small>
+                </div>
+
+              </div>
+              <div className="card">
+                <h3>#boraCodar</h3>
+                <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.</p>
+                <div className="tags">
+                  <small>rocketseat</small>
+                  <small>desafio</small>
+                </div>
+
+              </div>
+            </div>
+
+            <div className='container-card'>
+              <h1>Fazendo</h1>
+              <div className="card">
+                <h3>#boraCodar</h3>
+                <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.</p>
+                <div className="tags">
+                  <small>rocketseat</small>
+                  <small>desafio</small>
+                </div>
+
+              </div>
+
+              <div className="card">
+                <h3>#boraCodar</h3>
+                <p>Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.</p>
+                <div className="tags">
+                  <small>rocketseat</small>
+                  <small>desafio</small>
+                </div>
+
+              </div>
+            </div>
+
+            <div className='container-card'>
+              <h1>Feito</h1>
+              <div className="card">
+                <h3>#boraCodar</h3>
+                <p >Irure exercitation minim anim tempor ut irure ut exercitation sunt. Tempor anim officia quis occaecat occaecat. Nisi enim veniam mollit fugiat. Voluptate non adipisicing id amet aliqua id voluptate. Voluptate magna anim et ipsum amet ut esse cupidatat incididunt pariatur fugiat dolor non. Elit cillum deserunt laborum tempor culpa cupidatat. Ea culpa Lorem incididunt ex do dolore id.Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.</p>
+                <div className="tags">
+                  <small>rocketseat</small>
+                  <small>desafio</small>
+                </div>
+
+              </div>
+
+              <div className="card">
+                <h3>#boraCodar</h3>
+                <p >Novo desafio do #boraCodar da Rocketseat, onde é proposto construir um quadro de Kanban.</p>
+                <div className="tags">
+                  <small>rocketseat</small>
+                  <small>desafio</small>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
         </div>
 
-        <div className="main-kanbans">
 
-        </div>
       </div>
     </div>
   )
